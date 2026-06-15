@@ -1,0 +1,13 @@
+#Entornos virtuales
+venv/
+env/
+
+# Variables de entorno
+.env
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Datos (Tus CSVs no deben ir a GitHub por privacidad y peso)
+data/
