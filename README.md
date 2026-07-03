@@ -12,14 +12,14 @@ Los datos de RH suelen llegar en formatos inconsistentes: valores nulos, registr
 
 ## Estructura del proyecto
 
-├── src/
-│   ├── extract.py      # Extrae los datos desde el archivo CSV fuente
-│   ├── transform.py    # Limpia y normaliza los datos (nulos, duplicados, formatos)
-│   ├── load.py          # Carga los datos transformados a PostgreSQL
-│   └── main.py           # Orquesta el flujo completo (extract → transform → load)
-├── docker-compose.yml   # Levanta el contenedor de PostgreSQL
-├── requirements.txt
-└── .gitignore
+├── src/       
+├ ├── extract.py  
+├ ├── transform.py  
+├ ├── load.py   
+├ ├── main.py   
+├── docker-compose.yml   # Levanta el contenedor de PostgreSQL  
+├── requirements.txt  
+└── .gitignore  
 
 ## Fuente de datos
 
