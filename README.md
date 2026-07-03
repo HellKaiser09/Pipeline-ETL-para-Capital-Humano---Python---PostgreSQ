@@ -1,16 +1,17 @@
 # Pipeline ETL para Datos de Capital Humano
 Pipeline de Extracción, Transformación y Carga (ETL) que automatiza la limpieza y estructuración de un dataset de Recursos Humanos, cargando los datos procesados en una base de datos PostgreSQL.
 
-## 🎯 Problema que resuelve
+## Problema que resuelve
 Los datos de RH suelen llegar en formatos inconsistentes: valores nulos, registros duplicados, formatos de fecha o texto sin normalizar. Este pipeline automatiza ese proceso de limpieza y deja los datos listos para análisis o reportes, sin intervención manual repetitiva.
 
-## 🛠️ Stack
+## Stack
 - **Python 3** — lógica de extracción, transformación y carga
 - **Pandas** — limpieza y manipulación de datos (nulos, duplicados, normalización de formatos)
 - **PostgreSQL** — almacenamiento estructurado del resultado final
 - **Docker / Docker Compose** — levanta el servicio de PostgreSQL de forma aislada y reproducible
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
+
 ├── src/
 │   ├── extract.py      # Extrae los datos desde el archivo CSV fuente
 │   ├── transform.py    # Limpia y normaliza los datos (nulos, duplicados, formatos)
@@ -20,7 +21,7 @@ Los datos de RH suelen llegar en formatos inconsistentes: valores nulos, registr
 ├── requirements.txt
 └── .gitignore
 
-## 📊 Fuente de datos
+## Fuente de datos
 
 Dataset público de Recursos Humanos obtenido de [Kaggle](https://www.kaggle.com/datasets/rhuebner/human-resources-data-set), descargado en formato CSV para procesamiento local.
 
@@ -47,11 +48,11 @@ Dataset público de Recursos Humanos obtenido de [Kaggle](https://www.kaggle.com
    python src/main.py
 ```
 
-## 🔜 Próximos pasos
+## Próximos pasos
 
 - Programar la ejecución del pipeline de forma automática (cron / scheduler)
 - Agregar pruebas unitarias para las funciones de transformación
 - Documentar el esquema de la tabla destino en PostgreSQL
 
-## 📌 Nota
+## Nota
 Proyecto de análisis independiente con fines de portafolio, construido para practicar arquitectura ETL end-to-end.
