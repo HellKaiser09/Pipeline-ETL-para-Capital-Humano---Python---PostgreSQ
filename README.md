@@ -29,24 +29,37 @@ Dataset público de Recursos Humanos obtenido de [Kaggle](https://www.kaggle.com
 
 1. Clona el repositorio:
 ```bash
-   git clone https://github.com/HellKaiser09/Pipeline-ETL-para-Capital-Humano---Python---PostgreSQ
-   cd https://github.com/HellKaiser09/Pipeline-ETL-para-Capital-Humano---Python---PostgreSQ
+  git clone https://github.com/HellKaiser09/Pipeline-ETL-para-Capital-Humano---Python---PostgreSQ
+  cd Pipeline-ETL-para-Capital-Humano---Python---PostgreSQ
 ```
 
-2. Instala las dependencias:
+2. Crea y activa un entorno virtual:
+```bash
+   python -m venv venv
+
+   # En Windows
+   venv\Scripts\activate
+
+   # En macOS/Linux
+   source venv/bin/activate
+```
+
+3. Instala las dependencias:
 ```bash
    pip install -r requirements.txt
 ```
 
-3. Levanta el contenedor de PostgreSQL:
+4. Levanta el contenedor de PostgreSQL:
 ```bash
    docker-compose up -d
 ```
 
-4. Ejecuta el pipeline:
+5. Ejecuta el pipeline:
 ```bash
    python src/main.py
 ```
+
+## Pruebas visuales 
 
 ## Próximos pasos
 
